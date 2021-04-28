@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,600&display=swap");
+
+.accordion__container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+  background-color: #1ed760;
+  color: #191414;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  opacity: 1;
+}
+
+.accordion:hover,
+.active {
+  background-color: #1db954;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.accordion__name {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  background-color: white;
+  overflow: auto;
+  transition: max-height 0.6s ease;
+}
+
+.accordion__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 18px;
+}
